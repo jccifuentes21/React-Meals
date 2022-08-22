@@ -67,6 +67,7 @@ const cartReducer = (state, action) => {
 
 // the goal of this components is to manage the cart data, and provide the context to all components that want access to the data. Use this component to wrap all objects that need access to the cart data.
 const CartProvider = (props) => {
+  
   //When you call use reducer you pass in 2 arguments, the first being the reducer function, and the second the is the initial state. It returns an array with 2 elements. The 1st array element is always the state snapshot. The second element is the function which allows to dispatch an action to the reducer.
   const [cartState, dispatchCartAction] = useReducer(
     cartReducer,
